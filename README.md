@@ -18,10 +18,10 @@ per gRPC's documentation page:
 
 Some of the advantages of using protocol buffers include:
 
-    Compact data storage
-    Fast parsing
-    Availability in many programming languages
-    Optimized functionality through automatically-generated classes
+- Compact data storage
+- Fast parsing
+- Availability in many programming languages
+- Optimized functionality through automatically-generated classes
 
 -------------------
 
@@ -39,34 +39,36 @@ In this demo, I used gRPC's node.js library to test drive its functionality. All
 
 ### Endpoints
 
-GET /news 
-GET /news/:id 
-.
-POST /news 
-PUT /news/:id 
-DELETE /news/:id 
-.
-GET /newsStream
+- GET /news 
+- GET /news/:id 
+- POST /news 
+- PUT /news/:id 
+- DELETE /news/:id 
+- GET /newsStream
 
 ### Examples
 
-GET http://localhost:8000/news
-GET http://localhost:8000/news/1
+- GET http://localhost:8000/news
+- GET http://localhost:8000/news/1
 
-POST http://localhost:8000/news
+- POST http://localhost:8000/news
+```
 {
  "title": "new note",
  "body": "new body",
  "postImage": "new image"
 }
+```
 
-PUT http://localhost:8000/news/2
+- PUT http://localhost:8000/news/2
+```
 {
  "title": "edit note",
  "body": "edit body",
  "postImage": "edit image"
 }
+```
 
-DELETE http://localhost:8000/news/2
+- DELETE http://localhost:8000/news/2
 
-GET http://localhost:8000/newsStream
+- GET http://localhost:8000/newsStream
